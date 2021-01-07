@@ -1,8 +1,8 @@
 {
   "name": "vue-bulma2",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "description": "A UI Component Library Base on Vue.js and Bulma",
-  "author": "Chenz <chenz8606@gmail.com>",
+  "author": "Eureko Sigorta <eurekosigortaweb@gmail.com>",
   "private": false,
   "main": "dist/vue-blu.min.js",
   "files": [

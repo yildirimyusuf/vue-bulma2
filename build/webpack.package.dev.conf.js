@@ -5,6 +5,7 @@ var webpack = require('webpack')
 var merge = require('webpack-merge')
 var baseWebpackConfig = require('./webpack.package.conf')
 var ExtractTextPlugin = require('extract-text-webpack-plugin')
+var PreloadWebpackPlugin = require('preload-webpack-plugin')
 var env = process.env.NODE_ENV === 'testing'
   ? require('../config/test.env')
   : config.build.env
@@ -34,6 +35,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     //     warnings: false
     //   }
     // }),
+    new PreloadWebpackPlugin({
+        rel: 'preload',
+        as: 'font',
+        include: 'allAssets',
+        fileWhitelist: [/\.(woff2?|eot|ttf|otf)(\?.*)?$/i],
+    }),
     new webpack.optimize.OccurenceOrderPlugin(),
     // extract css into its own file
     new ExtractTextPlugin(utils.assetsPath('css/[name].css')),
