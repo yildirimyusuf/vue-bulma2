@@ -1,6 +1,6 @@
 {
   "name": "vue-bulma2",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "A UI Component Library Base on Vue.js and Bulma",
   "author": "Eureko Sigorta <eurekosigortaweb@gmail.com>",
   "private": false,
@@ -33,7 +33,6 @@
     "basic": "^2.0.3",
     "bulma": "^0.2.3",
     "flatpickr": "^2.4.3",
-    "font-awesome": "^4.7.0",
     "jump.js": "^1.0.1",
     "lodash": "^4.17.2",
     "popper.js": "^0.6.4",
