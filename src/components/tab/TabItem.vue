@@ -1,6 +1,6 @@
 <template>
   <transition :name="transition">
-    <div v-show="isActive"
+    <div v-if="isActive"
          class="tab-pane"
          :class="{ 'is-active': isActive }">
       <slot></slot>
